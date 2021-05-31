@@ -1,0 +1,142 @@
+body{
+    background-image: url(img/cloud.jpg);
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    min-height: 500px;
+}
+
+header{
+    font-size: 24px;
+}
+
+header, form{
+    min-height: 177px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form input, form button{
+    padding: 8px;
+    font-size: 32px;
+    border: none;
+    background-color: white;
+}
+
+form button{
+    color: rgb(62, 183, 249);
+    background-color: white;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+form button:hover{
+    background-color: rgb(0, 125, 193);
+    color: white;
+}
+
+select{
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: none;
+  border: none;
+  left: 50%;
+  margin-right: -50%;
+}
+
+.select{
+  left: 50%;
+  margin-right: -50%;
+  position: absolute;
+  overflow: hidden;
+}
+
+select{
+  color: rgb(0, 125, 193);
+  width: 160px;
+  cursor: pointer;
+  padding: 16px;
+}
+
+.select::after{
+  content: "\25BC";
+  position: absolute;
+  color:  rgb(62, 183, 249);
+  top: 0px;
+  right: 0px;
+  padding: 16px;
+  pointer-events: none;
+  transition: all 0.5s ease;
+}
+
+.select:hover::after{
+  color:  rgb(0, 125, 193);
+}
+
+
+.todo-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.todo-list{
+    min-width: 30%;
+    list-style: none;
+}
+
+.todo{
+    margin: 8px;
+    background-color: white;
+    color: black;
+    font-size: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.5s ease;
+}
+
+.todo li{
+    flex: 1;
+}
+
+.trash-btn, .complete-btn{
+    background:  rgb(62, 183, 249);
+    color: white;
+    border: none;
+    padding: 16px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.5s ease;
+}
+
+.complete-btn{
+    background:  rgb(0, 125, 193);
+}
+
+.trash-btn:hover{
+    background: rgb(0, 67, 103);
+}
+.complete-btn:hover{
+    background:  rgb(0, 67, 103);
+}
+
+.todo-item{
+    padding: 8px;
+}
+
+.fa-trash, .fa-check-square{
+    pointer-events: none;
+}
+
+.completed{
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+
+.fall{
+    transform: translateY(128px) rotateZ(20deg);
+    opacity: 0;
+}

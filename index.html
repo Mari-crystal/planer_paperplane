@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/2deed62389.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="img/paperplane.png">
+    <link rel="stylesheet" href="./style.css">
+    <title>Planer</title>
+</head>
+<body>
+    <div>
+        <img src="img/animat-paper-airplane-color.gif" alt="" id="paperplane" width="200px"/>
+    </div>
+
+    <header>
+        <h1>Список дел на сегодня</h1>
+    </header>
+    <div class="select">
+        <select name="todos" class="filter-todo">
+            <option value="all">Все</option>
+            <option value="completed">Завершенные</option>
+            <option value="uncompleted">Незавершенные</option>
+        </select>
+    </div>
+    <form>
+        <input type="text"  placeholder="Купить билет в кино" class="todo-input">
+        <button class="todo-button" type="submit">
+            <i class="fas fa-plus-square"></i>
+        </button>
+    </form>
+    <div class="todo-container">
+        <ul class="todo-list"></ul>
+    </div>
+
+    <script src="./app.js"></script>
+
+    
+</body>
+</html>
